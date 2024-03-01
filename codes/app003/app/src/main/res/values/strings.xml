@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">App003</string>
-    <string name="str1">Jetpack Compose tutorial</string>
-    <string name="str2">Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.</string>
-    <string name="str3">In this tutorial, you build a simple UI component with declarative functions. You call Compose functions to say what elements you want and the Compose compiler does the rest. Compose is built around Composable functions. These functions let you define your app\\\'s UI programmatically because they let you describe how it should look and provide data dependencies, rather than focus on the process of the UI\\\'s construction, such as initializing an element and then attaching it to a parent. To create a Composable function, you add the @Composable annotation to the function name.</string>
-    <string name="title_activity_2">Activity2</string>
+    <string name="str11">Jetpack Compose tutorial</string>
+    <string name="str12">Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.</string>
+    <string name="str13">In this tutorial, you build a simple UI component with declarative functions. You call Compose functions to say what elements you want and the Compose compiler does the rest. Compose is built around Composable functions. These functions let you define your app\\\'s UI programmatically because they let you describe how it should look and provide data dependencies, rather than focus on the process of the UI\\\'s construction, such as initializing an element and then attaching it to a parent. To create a Composable function, you add the @Composable annotation to the function name.</string>
+    <string name="title_activity_2">Task manager</string>
     <string name="str21">All tasks completed</string>
     <string name="str22">Nice work!</string>
+    <string name="title_activity_3">Compose quadrant</string>
+    <string name="str31">Text composable</string>
+    <string name="str32">Displays text and follows the recommended Material Design guidelines.</string>
+    <string name="str33">Image composable</string>
+    <string name="str34">Creates a composable that lays out and draws a given Painter class object.</string>
+    <string name="str35">Row composable</string>
+    <string name="str36">A layout composable that places its children in a horizontal sequence.</string>
+    <string name="str37">Column composable</string>
+    <string name="str38">A layout composable that places its children in a vertical sequence.</string>
 </resources>

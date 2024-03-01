@@ -43,9 +43,9 @@ class MainActivity : ComponentActivity() {
 fun Article1() {
     ArticleCard(
         headImage = painterResource(id = R.drawable.bg_compose_background),
-        title = stringResource(id = R.string.str1),
-        shortDescription = stringResource(id = R.string.str2),
-        longDescription = stringResource(id = R.string.str3)
+        title = stringResource(id = R.string.str11),
+        shortDescription = stringResource(id = R.string.str12),
+        longDescription = stringResource(id = R.string.str13)
     )
 }
 

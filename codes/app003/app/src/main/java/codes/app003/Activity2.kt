@@ -66,7 +66,7 @@ fun TaskCompleted() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun Activity2Preview() {
     App003Theme {
         TaskCompleted()
     }
