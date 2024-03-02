@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App004</string>
+    <string name="user_name">Michael Pan</string>
+    <string name="user_profession">Software Engineer</string>
+    <string name="user_phone">+593 099 789 1234</string>
+    <string name="user_social">\@mysocialid</string>
+    <string name="user_email">my@email.address</string>
+</resources>
