@@ -8,8 +8,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Phone
@@ -22,11 +23,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import codes.app004.ui.theme.App004Theme
 
@@ -40,7 +41,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    //
+                    BusinessCard()
                 }
             }
         }
@@ -86,16 +87,19 @@ fun ContactPart() {
         ){
             Row {
                 Icon(imageVector = Icons.Rounded.Phone, contentDescription = null)
+                Spacer(modifier = Modifier.width(8.dp))
                 Text(text = stringResource(id = R.string.user_phone))
             }
 
             Row {
                 Icon(imageVector = Icons.Rounded.Share, contentDescription = null)
+                Spacer(modifier = Modifier.width(8.dp))
                 Text(text = stringResource(id = R.string.user_social))
             }
 
             Row {
                 Icon(imageVector = Icons.Rounded.Email, contentDescription = null)
+                Spacer(modifier = Modifier.width(8.dp))
                 Text(text = stringResource(id = R.string.user_email))
             }
         }
