@@ -100,20 +100,20 @@ fun ScreenCard(step: Int = 0, modifier: Modifier = Modifier) {
         else -> R.string.str24
     }
     val handler = when(step){
-        0, 2, 3 -> ({
+        0 -> ({
+            count = (2..4).random()
+
             step = (step + 1) % 4
         })
-        else -> ({
-            // TODO: 问题，需要第一次点击以后才知道共需要挤压几次
-            if (count == 0) { // 先设定需要挤压的次数
-                count = (2..4).random()
-            }
-
+        1 -> ({
             count--; // 挤压
 
             if (count == 0) { // 跳到下一步
                 step = (step + 1) % 4
             }
+        })
+        else -> ({
+            step = (step + 1) % 4
         })
     }
     Column(
@@ -135,8 +135,6 @@ fun ScreenCard(step: Int = 0, modifier: Modifier = Modifier) {
             text = stringResource(id = textResource),
             fontSize = 18.sp
         )
-        Text(
-            text = "DEBUG=> step: $step, count: $count"
-        )
+//        Text(text = "DEBUG=> step: $step, count: $count")
     }
 }
