@@ -104,6 +104,7 @@ fun ScreenCard(step: Int = 0, modifier: Modifier = Modifier) {
             step = (step + 1) % 4
         })
         else -> ({
+            // TODO: 问题，需要第一次点击以后才知道共需要挤压几次
             if (count == 0) { // 先设定需要挤压的次数
                 count = (2..4).random()
             }
